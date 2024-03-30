@@ -6,624 +6,678 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>666</width>
-    <height>411</height>
+    <width>670</width>
+    <height>424</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTabWidget" name="Vendedores_t">
+   <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>30</y>
-      <width>650</width>
-      <height>326</height>
+      <y>10</y>
+      <width>651</width>
+      <height>361</height>
      </rect>
     </property>
-    <property name="currentIndex">
-     <number>0</number>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(0, 0, 127)</string>
     </property>
-    <property name="iconSize">
-     <size>
-      <width>18</width>
-      <height>18</height>
-     </size>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
     </property>
-    <widget class="QWidget" name="Vendedores_t4">
-     <attribute name="title">
-      <string>Vendedores</string>
-     </attribute>
-     <widget class="QPushButton" name="refrescar_t1">
-      <property name="geometry">
-       <rect>
-        <x>280</x>
-        <y>270</y>
-        <width>75</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Refrescar</string>
-      </property>
-     </widget>
-     <widget class="QTableWidget" name="tableWidget_4">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>60</y>
-        <width>611</width>
-        <height>201</height>
-       </rect>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>611</width>
-        <height>201</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color:rgb(255, 255, 255);</string>
-      </property>
-      <column>
-       <property name="text">
-        <string>ID</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Nombre</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Apellido</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Cédula</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>RIF</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Ruta(s)</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Residencia</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Telefono</string>
-       </property>
-      </column>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="Vendedores_t2">
-     <attribute name="title">
-      <string>Buscar Vendedores</string>
-     </attribute>
-     <widget class="QLineEdit" name="lineEdit">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>20</y>
-        <width>113</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="placeholderText">
-       <string>ID Vendedor</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="Buscar_t2">
-      <property name="geometry">
-       <rect>
-        <x>260</x>
-        <y>270</y>
-        <width>75</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Buscar</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_6">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>20</y>
-        <width>75</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Buscar</string>
-      </property>
-     </widget>
-     <widget class="QTableWidget" name="tableWidget_5">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>60</y>
-        <width>611</width>
-        <height>201</height>
-       </rect>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>611</width>
-        <height>201</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color:rgb(255, 255, 255);</string>
-      </property>
-      <column>
-       <property name="text">
-        <string>ID</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Nombre</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Apellido</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Cédula</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>RIF</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Ruta(s)</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Residencia</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Telefono</string>
-       </property>
-      </column>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="Vendedores_t3">
-     <attribute name="title">
-      <string>Agregar Nuevos Vendedores</string>
-     </attribute>
-     <widget class="QFrame" name="frame_2">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>30</y>
-        <width>551</width>
-        <height>231</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <widget class="QWidget" name="">
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTabWidget" name="Vendedores_t">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>631</width>
+       <height>326</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0.011, y1:0.0962727, x2:1, y2:1, stop:0 rgba(201, 50, 0, 255), stop:1 rgba(223, 158, 12, 255));
+</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>18</width>
+       <height>18</height>
+      </size>
+     </property>
+     <widget class="QWidget" name="Vendedores_t4">
+      <attribute name="title">
+       <string>Vendedores</string>
+      </attribute>
+      <widget class="QPushButton" name="refrescar_t1">
        <property name="geometry">
         <rect>
-         <x>160</x>
-         <y>21</y>
-         <width>53</width>
+         <x>280</x>
+         <y>270</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:white;</string>
+       </property>
+       <property name="text">
+        <string>Refrescar</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>611</width>
          <height>201</height>
         </rect>
        </property>
-       <layout class="QVBoxLayout" name="verticalLayout_2">
-        <item>
-         <widget class="QLabel" name="label">
-          <property name="text">
-           <string>ID</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_2">
-          <property name="text">
-           <string>Nombre</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_3">
-          <property name="text">
-           <string>Apellido</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_4">
-          <property name="text">
-           <string>Cédula</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_5">
-          <property name="text">
-           <string>RIF</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_16">
-          <property name="text">
-           <string>Ruta(s)</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_6">
-          <property name="text">
-           <string>Residencia</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_14">
-          <property name="text">
-           <string>Telefono</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
+       <property name="maximumSize">
+        <size>
+         <width>611</width>
+         <height>201</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(255, 255, 255);</string>
+       </property>
+       <column>
+        <property name="text">
+         <string>ID</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Nombre</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Apellido</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Cédula</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>RIF</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Ruta(s)</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Residencia</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Telefono</string>
+        </property>
+       </column>
       </widget>
-      <widget class="QWidget" name="">
+     </widget>
+     <widget class="QWidget" name="Vendedores_t2">
+      <attribute name="title">
+       <string>Buscar Vendedores</string>
+      </attribute>
+      <widget class="QLineEdit" name="lineEdit">
        <property name="geometry">
         <rect>
-         <x>221</x>
+         <x>20</x>
          <y>20</y>
-         <width>241</width>
-         <height>204</height>
+         <width>113</width>
+         <height>20</height>
         </rect>
        </property>
-       <layout class="QVBoxLayout" name="verticalLayout_3">
-        <item>
-         <widget class="QLineEdit" name="lineEdit_18"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_31"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_19"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_20"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_21"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_22"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_23"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_17"/>
-        </item>
-       </layout>
+       <property name="styleSheet">
+        <string notr="true">background-color:white;</string>
+       </property>
+       <property name="placeholderText">
+        <string>ID Vendedor</string>
+       </property>
       </widget>
-     </widget>
-     <widget class="QPushButton" name="pushButton">
-      <property name="geometry">
-       <rect>
-        <x>260</x>
-        <y>270</y>
-        <width>75</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Agregar</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="Vendedores_t4">
-     <attribute name="title">
-      <string>Actualizar Vendedores</string>
-     </attribute>
-     <widget class="QFrame" name="frame_3">
-      <property name="geometry">
-       <rect>
-        <x>240</x>
-        <y>50</y>
-        <width>321</width>
-        <height>231</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <widget class="QWidget" name="layoutWidget">
+      <widget class="QPushButton" name="Buscar_t2">
        <property name="geometry">
         <rect>
-         <x>9</x>
-         <y>11</y>
-         <width>53</width>
+         <x>280</x>
+         <y>270</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:white;</string>
+       </property>
+       <property name="text">
+        <string>Buscar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>20</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:white;</string>
+       </property>
+       <property name="text">
+        <string>Buscar</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>611</width>
          <height>201</height>
         </rect>
        </property>
-       <layout class="QVBoxLayout" name="verticalLayout_4">
-        <item>
-         <widget class="QLabel" name="label_7">
-          <property name="text">
-           <string>ID</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_8">
-          <property name="text">
-           <string>Nombre</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_9">
-          <property name="text">
-           <string>Apellido</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_10">
-          <property name="text">
-           <string>Cédula</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_11">
-          <property name="text">
-           <string>RIF</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_17">
-          <property name="text">
-           <string>Ruta(s)</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_12">
-          <property name="text">
-           <string>Residencia</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_15">
-          <property name="text">
-           <string>Telefono</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
+       <property name="maximumSize">
+        <size>
+         <width>611</width>
+         <height>201</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(255, 255, 255);</string>
+       </property>
+       <column>
+        <property name="text">
+         <string>ID</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Nombre</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Apellido</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Cédula</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>RIF</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Ruta(s)</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Residencia</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Telefono</string>
+        </property>
+       </column>
       </widget>
-      <widget class="QWidget" name="layoutWidget_2">
+     </widget>
+     <widget class="QWidget" name="Vendedores_t3">
+      <attribute name="title">
+       <string>Agregar Nuevos Vendedores</string>
+      </attribute>
+      <widget class="QFrame" name="frame_2">
        <property name="geometry">
         <rect>
-         <x>70</x>
-         <y>10</y>
-         <width>241</width>
-         <height>204</height>
+         <x>20</x>
+         <y>30</y>
+         <width>551</width>
+         <height>231</height>
         </rect>
        </property>
-       <layout class="QVBoxLayout" name="verticalLayout_5">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>21</y>
+          <width>53</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>ID</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Nombre</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Apellido</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Cédula</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>RIF</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_16">
+           <property name="text">
+            <string>Ruta(s)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>Residencia</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_14">
+           <property name="text">
+            <string>Telefono</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>221</x>
+          <y>20</y>
+          <width>241</width>
+          <height>204</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_18"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_31"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_19"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_20"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_21"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_22"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_23"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_17"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>270</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:white;</string>
+       </property>
+       <property name="text">
+        <string>Agregar</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="Vendedores_t4_2">
+      <attribute name="title">
+       <string>Actualizar Vendedores</string>
+      </attribute>
+      <widget class="QFrame" name="frame_3">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>50</y>
+         <width>321</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QWidget" name="layoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>11</y>
+          <width>53</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>ID</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>Nombre</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>Apellido</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>Cédula</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string>RIF</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_17">
+           <property name="text">
+            <string>Ruta(s)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_12">
+           <property name="text">
+            <string>Residencia</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_15">
+           <property name="text">
+            <string>Telefono</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>10</y>
+          <width>241</width>
+          <height>204</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_24"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_32"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_25"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_26"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_27"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_28"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_29"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_30"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>300</y>
+         <width>181</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Actualizar</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_5">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>120</y>
+         <width>183</width>
+         <height>70</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
         <item>
-         <widget class="QLineEdit" name="lineEdit_24"/>
+         <widget class="QLabel" name="label_13">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>INGRESE EL ID DEL VENDEDOR</string>
+          </property>
+         </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEdit_32"/>
+         <widget class="QLineEdit" name="lineEdit_15">
+          <property name="styleSheet">
+           <string notr="true">background-color:white;</string>
+          </property>
+         </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="lineEdit_25"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_26"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_27"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_28"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_29"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_30"/>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="styleSheet">
+           <string notr="true">background-color:white;</string>
+          </property>
+          <property name="text">
+           <string>Buscar</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
      </widget>
-     <widget class="QPushButton" name="pushButton_3">
-      <property name="geometry">
-       <rect>
-        <x>340</x>
-        <y>300</y>
-        <width>181</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Actualizar</string>
-      </property>
-     </widget>
-     <widget class="QWidget" name="layoutWidget_5">
-      <property name="geometry">
-       <rect>
-        <x>30</x>
-        <y>120</y>
-        <width>183</width>
-        <height>70</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="QLabel" name="label_13">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string>INGRESE EL ID DEL VENDEDOR</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEdit_15"/>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_2">
-         <property name="text">
-          <string>Buscar</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="Vendedores_t5">
-     <attribute name="title">
-      <string>Borrar Vendedores</string>
-     </attribute>
-     <widget class="QPushButton" name="pushButton_4">
-      <property name="geometry">
-       <rect>
-        <x>260</x>
-        <y>270</y>
-        <width>75</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Borrar</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_5">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>20</y>
-        <width>75</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Buscar</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEdit_16">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>20</y>
-        <width>113</width>
-        <height>20</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QTableWidget" name="tableWidget_6">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>60</y>
-        <width>611</width>
-        <height>201</height>
-       </rect>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>611</width>
-        <height>201</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color:rgb(255, 255, 255);</string>
-      </property>
-      <column>
-       <property name="text">
-        <string>ID</string>
+     <widget class="QWidget" name="Vendedores_t5">
+      <attribute name="title">
+       <string>Borrar Vendedores</string>
+      </attribute>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>270</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
        </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Nombre</string>
+       <property name="styleSheet">
+        <string notr="true">background-color:white;</string>
        </property>
-      </column>
-      <column>
        <property name="text">
-        <string>Apellido</string>
+        <string>Borrar</string>
        </property>
-      </column>
-      <column>
+      </widget>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>20</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:white;</string>
+       </property>
        <property name="text">
-        <string>Cédula</string>
+        <string>Buscar</string>
        </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>RIF</string>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_16">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
        </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Ruta(s)</string>
+       <property name="styleSheet">
+        <string notr="true">background-color:white;</string>
        </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Residencia</string>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>611</width>
+         <height>201</height>
+        </rect>
        </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Telefono</string>
+       <property name="maximumSize">
+        <size>
+         <width>611</width>
+         <height>201</height>
+        </size>
        </property>
-      </column>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(255, 255, 255);</string>
+       </property>
+       <column>
+        <property name="text">
+         <string>ID</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Nombre</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Apellido</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Cédula</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>RIF</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Ruta(s)</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Residencia</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Telefono</string>
+        </property>
+       </column>
+      </widget>
      </widget>
     </widget>
    </widget>
@@ -633,7 +687,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>666</width>
+     <width>670</width>
      <height>21</height>
     </rect>
    </property>

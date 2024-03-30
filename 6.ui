@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>750</width>
+    <height>651</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(173, 46, 0, 255), stop:1 rgba(255, 255, 255, 255))</string>
+     <string notr="true">background-color:rgb(0, 0, 127)</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -35,7 +35,7 @@
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>300</x>
+       <x>270</x>
        <y>10</y>
        <width>121</width>
        <height>21</height>
@@ -112,7 +112,7 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>210</y>
+       <y>180</y>
        <width>701</width>
        <height>391</height>
       </rect>
@@ -165,7 +165,7 @@
      <property name="geometry">
       <rect>
        <x>550</x>
-       <y>30</y>
+       <y>40</y>
        <width>71</width>
        <height>161</height>
       </rect>
@@ -174,8 +174,7 @@
       <bool>false</bool>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-image:  url(:/1/logo final png1.png);
-
+      <string notr="true">background-image: url(:/newPrefix/PNG/logo final png1.png);
 background-color:rgb(ffff)</string>
      </property>
      <property name="frameShape">
@@ -188,7 +187,7 @@ background-color:rgb(ffff)</string>
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="recursos.qrc">:/1/logo final png1.png</pixmap>
+      <pixmap>:/newPrefix/PNG/logo final png1.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -229,6 +228,42 @@ background-color:rgb(ffff)</string>
       <string>FINALIZAR</string>
      </property>
     </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>10</y>
+       <width>71</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-image: url(:/prefix/logo final png1.png);
+background-color:rgba(255, 255, 255, 0)</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resources/archivo recursos.qrc">:/prefix/logo final png1.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="buddy">
+      <cstring></cstring>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -236,7 +271,7 @@ background-color:rgb(ffff)</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>750</width>
      <height>21</height>
     </rect>
    </property>
@@ -244,7 +279,9 @@ background-color:rgb(ffff)</string>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="recursos.qrc"/>
+  <include location="resources/archivo recursos.qrc"/>
+  <include location="../../../../Desktop/recurso1.qrc"/>
+  <include location="../../Desktop/recurso1.qrc"/>
  </resources>
  <connections/>
 </ui>

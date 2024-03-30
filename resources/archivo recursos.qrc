@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="prefix">
+    <file>close_24px.png</file>
+    <file>logo final png1.png</file>
+    <file>maximize_window_24px.png</file>
+    <file>minimize_window_24px.png</file>
+  </qresource>
+</RCC>
